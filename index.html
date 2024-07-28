@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSCode Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="vscode">
+        <div class="activity-bar">
+            <div class="icon" onclick="toggleSidebar()">🏠</div>
+            <div class="icon">🔍</div>
+            <div class="icon">🔗</div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>File Explorer</li>
+                <li>Search</li>
+                <li>Source Control</li>
+                <li>Run</li>
+                <li>Extensions</li>
+            </ul>
+        </div>
+        <div class="editor">
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'tab1')">Project 1</button>
+                <button class="tablink" onclick="openTab(event, 'tab2')">Project 2</button>
+                <button class="tablink" onclick="openTab(event, 'tab3')">Project 3</button>
+            </div>
+            <div id="tab1" class="tabcontent">
+                <div class="header">Project 1r</div>
+                <div class="content">
+                    <p>Details about Project 1.</p>
+                </div>
+            </div>
+            <div id="tab2" class="tabcontent" style="display:none">
+                <div class="header">Project 2</div>
+                <div class="content">
+                    <p>Details about Project 2.</p>
+                </div>
+            </div>
+            <div id="tab3" class="tabcontent" style="display:none">
+                <div class="header">Project 3</div>
+                <div class="content">
+                    <p>Details about Project 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="status-bar">
+        <span>Status Bar</span>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
