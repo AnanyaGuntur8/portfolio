@@ -13,11 +13,12 @@ body, html {
 .vscode {
     display: flex;
     height: calc(100vh - 30px);
+    position: relative; /* Ensures the sidebar toggle works correctly */
 }
 
 .activity-bar {
     width: 50px;
-    background-color: #333;
+    background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,10 +26,16 @@ body, html {
 }
 
 .sidebar {
-    width: 20%;
-    background-color: #252526;
+    width: 10%;
+    background-color: #1e1e1e;
     padding: 10px;
     border-right: 1px solid #333;
+    transition: width 0.3s; /* Add transition for smooth toggle */
+}
+.sidebar.hidden {
+    width: 0;
+    padding: 0;
+    border: none;
 }
 
 .editor {
@@ -66,15 +73,16 @@ body, html {
 }
 
 .tablink:hover {
-    background-color: #444;
+    background-color: #333;
 }
 
 .tablink.active {
-    background-color: #252526;
+    background-color: #333;
 }
 
 .tabcontent {
     display: none;
+    background-color: #333;
 }
 
 .hidden {

@@ -3,6 +3,7 @@ function toggleSidebar() {
     sidebar.classList.toggle('hidden');
 }
 
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
