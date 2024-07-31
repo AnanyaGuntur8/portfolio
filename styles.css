@@ -15,7 +15,7 @@ body, html {
 }
 
 .activity-bar {
-    width: 50px;
+    width: 80px;
     background-color: #181818;
     display: flex;
     flex-direction: column;
@@ -179,4 +179,57 @@ body, html {
 }
 .comment{
     color: rgb(67, 168, 67);
+}
+.card-container {
+    display: flex; /* Use Flexbox to arrange cards side by side */
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start;/* Center cards horizontally */
+    align-items: center; /* Align cards verticlly */
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.card {
+    width: 500px; /* Width of each card */
+    height: 200px; /* Height of each card */
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative; /* Position relative to its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Make sure it's positioned absolutely */
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    transition: transform 0.8s;
+    padding-bottom: 40px;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 30px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }

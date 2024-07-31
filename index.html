@@ -21,7 +21,7 @@
             <div class="tabs">
                 <button class="tablink" id="defaultOpen" onclick="openTab(event, 'tab1')">Welcome</button>
                 <button class="tablink" onclick="openTab(event, 'tab2')">Experiences</button>
-                <button class="tablink" onclick="openTab(event, 'tab3')">Project 3</button>
+                <button class="tablink" onclick="openTab(event, 'tab3')">Projects</button>
             </div>
             <div id="tab1" class="tabcontent">
                 <div class="welcomescreen">
@@ -112,14 +112,47 @@
                         </p>
                         <p class="comment">//</p>
                         <p class="comment">//</p>
-                        <p class="comment">//end experiences</p>
+                        <p class="comment">//end of experiences</p>
                 </div>
             </div>
             
             <div id="tab3" class="tabcontent">
-                <div class="header">Project 3</div>
-                <div class="content">
-                    <p>Details about Project 3.</p>
+                <div class="experience-header">PROJECTS</div>
+                    <div class="content">
+                        <p class="comment"><strong>/* I believe that software development and engineering is an art form in the sense that
+                        </br> there must be logic and a sense of creativity. These projects help me develop my own sense of style and creativity 
+                        </br> while being able to use the skills that I cultivated. I am always actively seeking out to do projects that challenge my skills
+                        </br>and challenge my critical thinking. I want to create projects that create an impact on the world. **\
+                        </strong>
+                        </p>
+                        <div class="card-container">
+                            <div class="card" onclick="flipCard(this)">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3>Project 1</h3>
+                                        <p>Click to flip</p>
+                                    </div>
+                                    <div class="card-back">
+                                        <h3>Project 1 Details</h3>
+                                        <p>Details about Project 1...</p>
+                                    </div>
+                                </div>
+                            </div> <!-- End of .card -->
+                        </div> <!--end of card container-->
+                        <div class="card-container">
+                            <div class="card" onclick="flipCard(this)">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3>Project 1</h3>
+                                        <p>Click to flip</p>
+                                    </div>
+                                    <div class="card-back">
+                                        <h3>Project 1 Details</h3>
+                                        <p>Details about Project 1...</p>
+                                    </div>
+                                </div>
+                            </div> <!-- End of .card -->
+                        </div> <!--end of card container-->
                 </div>
             </div>
         </div>

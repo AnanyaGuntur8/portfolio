@@ -17,3 +17,6 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+function flipCard(card) {
+    card.classList.toggle('flipped');
+}
