@@ -20,3 +20,17 @@ function openTab(evt, tabName) {
 function flipCard(card) {
     card.classList.toggle('flipped');
 }
+
+function openSidePanel(infoId) {
+    var sidePanel = document.getElementById('sidePanel');
+    var panelInfos = document.getElementsByClassName('panel-info');
+    for (var i = 0; i < panelInfos.length; i++) {
+        panelInfos[i].style.display = 'none';
+    }
+    document.getElementById(infoId).style.display = 'block';
+    sidePanel.style.width = '500px';
+}
+
+function closeSidePanel() {
+    document.getElementById('sidePanel').style.width = '0';
+}

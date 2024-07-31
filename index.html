@@ -65,6 +65,16 @@
                             now, I still enjoy working with the research team and learning from them. 
                             </p>
                 </div>
+                <div class="experience-item"><div class="experience-item">
+                    <h3 class="header-three">Learning Assistant For Calculus 1 Math & Physics</h3>
+                        <p class="experience-content"><strong>Rutgers University Math Department</strong> | Rutgers University | 2024 - Present</p>
+                        <p class="content-ex">"Helping students learn the fundementals of College Calculus 1. Assisting over 150+ Students in 
+                        </br> lecture and in recitation. Assiting the professor in learning developments that benefits the students
+                        </br> working with other learning assistants to create a strong environement for students in the class
+                        </p>
+                        <p class="comment">//I love giving back to my community and this opportunity gives me the opportunity to help students.
+                        </br>I can use different tips and tricks that I've developed while learning this subject that can greatly help my peers 
+                        </p></div>
                     <div class="experience-item">
                         <h3 class="header-three">HeadStarter AI Fellow</h3>
                             <p class="experience-content"><strong>HeadStarter.AI</strong> | Virtual | 2024 - Present</p>
@@ -100,16 +110,7 @@
                         </br>not able to finish this project, I am continuing to use this to my leverage and develop projects on my own. 
                         </p>
                 </div>
-                <div class="experience-item">
-                    <h3 class="header-three">Learning Assistant For Calculus 1 Math & Physics</h3>
-                        <p class="experience-content"><strong>Rutgers University Math Department</strong> | Rutgers University | 2024 - Present</p>
-                        <p class="content-ex">"Helping students learn the fundementals of College Calculus 1. Assisting over 150+ Students in 
-                        </br> lecture and in recitation. Assiting the professor in learning developments that benefits the students
-                        </br> working with other learning assistants to create a strong environement for students in the class
-                        </p>
-                        <p class="comment">//I love giving back to my community and this opportunity gives me the opportunity to help students.
-                        </br>I can use different tips and tricks that I've developed while learning this subject that can greatly help my peers 
-                        </p>
+                
                         <p class="comment">//</p>
                         <p class="comment">//</p>
                         <p class="comment">//end of experiences</p>
@@ -120,50 +121,110 @@
                 <div class="experience-header">PROJECTS</div>
                     <div class="content">
                         <p class="comment"><strong>/* I believe that software development and engineering is an art form in the sense that
-                        </br> there must be logic and a sense of creativity. These projects help me develop my own sense of style and creativity 
-                        </br> while being able to use the skills that I cultivated. I am always actively seeking out to do projects that challenge my skills
-                        </br>and challenge my critical thinking. I want to create projects that create an impact on the world. **\
+                        </br> there must be logic and a sense of creativity. These projects help me develop my own sense of style and  
+                        </br>creativity while being able to use the skills that I cultivated. I am always actively seeking out to do projects 
+                        </br>that challenge my skills and challenge my critical thinking. 
+                        </br>I want to create projects that create an impact on the world. 
+                        </br>
+                    </br> click the projects to see more details  **\
                         </strong>
                         </p>
                         <div class="card-container">
-                            <div class="card" onclick="flipCard(this)">
+                            <div class="card" onclick="openSidePanel('openBookInfo')">
                                 <div class="card-inner">
                                     <div class="card-front">
-                                        <h3>Project 1</h3>
-                                        <p>Click to flip</p>
-                                    </div>
-                                    <div class="card-back">
-                                        <h3>Project 1 Details</h3>
-                                        <p>Details about Project 1...</p>
+                                        <h3 class="card-header">Open Book</h3>
+                                        <p class="card-content">Open Book: Anonymous Notes, Emotionally Intelligent Support. Join our community, where mental health matters and voices are heard without fear.</p>
+                                        <p class="card-content">HackHers Best Mobile App Hack</p>
                                     </div>
                                 </div>
-                            </div> <!-- End of .card -->
-                        </div> <!--end of card container-->
+                            </div> 
+                            <div class="card" onclick="openSidePanel('project2Info')">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">KnowJoy</h3>
+                                        <p class="card-content"> Personalize studying platforms from various game modes tailored to your learning and make learning fun and effective</p>
+                                        <p class="card-content">BuildSpace s5 n&w project</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                        </div> 
                         <div class="card-container">
-                            <div class="card" onclick="flipCard(this)">
+                            <div class="card" onclick="openSidePanel('openBookInfo')">
                                 <div class="card-inner">
                                     <div class="card-front">
-                                        <h3>Project 1</h3>
-                                        <p>Click to flip</p>
-                                    </div>
-                                    <div class="card-back">
-                                        <h3>Project 1 Details</h3>
-                                        <p>Details about Project 1...</p>
+                                        <h3 class="card-header">Open Book</h3>
+                                        <p class="card-content">Open Book: Anonymous Notes, Emotionally Intelligent Support. Join our community, where mental health matters and voices are heard without fear.</p>
+                                        <p class="card-content">HackHers Best Mobile App Hack</p>
                                     </div>
                                 </div>
-                            </div> <!-- End of .card -->
-                        </div> <!--end of card container-->
+                            </div> 
+                            <div class="card" onclick="openSidePanel('project2Info')">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">KnowJoy</h3>
+                                        <p class="card-content"> Personalize studying platforms from various game modes tailored to your learning and make learning fun and effective</p>
+                                        <p class="card-content">BuildSpace s5 n&w project</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                        </div> 
+                        <div id="sidePanel" class="side-panel">
+                            <div class="side-panel-content">
+                                <span class="close-btn" onclick="closeSidePanel()">&times;</span>
+                                <div id="openBookInfo" class="panel-info">
+                                    <h3>Open Book Details</h3>
+                                    <p>Users are able to post anonymous notes without any identifier being traced back to them in the client side</br>
+                                        With Semantic Analysis, our app analyzes the emotional content to provide suggested emojis</br>
+                                        </br>Technologies Used: Flask, Python, HTML, CSS</br>
+                                        Frameworks Used: TensorFlow, Keras, SQLAlchemy</br>
+                                        Editors: VSCode, Jupyter Notebooks, Git</br>
+                                        </br> Links to Project</br>
+                                        <li>
+                                            <a href="https://devpost.com/software/open-book-gr90lq" class="link">Open Book Project On DevPost</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/pallavibiswas/open-book.git" class="link">Open Book Project On Github</a>
+                                            <p class="comment">//This project was hosted on my peer's github during the hackathon, I worked on the semantic analysis model (Working Model.ipynb) with an overall accuracy rate of 70%</p>
+                                        </li>
+                                        
+                                        
+                                    </p>
+                                </div>
+                                <div id="project2Info" class="panel-info">
+                                    <h3>KnowJoy Details</h3>
+                                    <p>An educational platform where users are able to learn through interactive games additionally developers are able to host their own games
+                                    </br>Technologies Used: HTML, CSS, JS, C# (for future games developed by team)</br>
+                                    </br>Editors used: VSCode, Godot (for future game making)
+                                </br>
+                                    </br> Links to Project
+                                    <li>
+                                        <a href="https://knowjoy.onrender.com/" class="link">KnowJoy Prototype</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/nb923/KnowJoy.git" class="link">KnowJoy GitHub</a>
+                                    </li>
+                                </br>
+                                <p class="comment">//My team and I are still continuing to develop this project</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <script src="scripts.js"></script>
     <script>
         // Ensure the first tab is open by default
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('defaultOpen').click();
         });
+
+       
     </script>
 </body>
 </html>
-
