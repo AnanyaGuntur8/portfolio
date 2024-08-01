@@ -11,7 +11,7 @@ body, html {
 .vscode {
     display: flex;
     height: calc(100vh - 30px);
-    position: relative; /* Ensures the sidebar toggle works correctly */
+    position: relative; 
 }
 
 .activity-bar {
@@ -25,7 +25,12 @@ body, html {
 }
 .icon{
     padding-top: 20px;
-    font-size: 50px;
+    font-size: 30px;
+}
+.icon-contacts img{
+    padding-top: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 .sidebar {
@@ -33,38 +38,52 @@ body, html {
     background-color: #181818;
     padding: 10px;
     border-right: 1px solid #181818;
-    transition: width 0.3s; /* Add transition for smooth toggle */
+    transition: width 0.3s; 
+    display: flex;
+    flex-direction: column;
 }
 .sidebar.hidden {
     width: 0;
     padding: 0;
     border: none;
 }
+.button-link{
+    padding: 10px;
+    border: none;
+    background-color: #181818;
+    color: #d4d4d4;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 50px;
+}
+.button-link.active {
+    background-color: #1F1F1F;
+}
 
 .editor {
     width: 100%;
     padding: 1px;
-    height: calc(100% - 30px); /* Adjust for the height of the status bar */
-    position: relative; /* Ensures .tabcontent stays within editor */
+    height: calc(100% - 30px); 
+    position: relative; 
 }
 
 .tabs {
     display: flex;
     border-bottom: 1px solid #1F1F1F;
-    position: sticky; /* Keep tabs fixed at the top of the editor */
-    top: 0; /* Align with the top of the editor area */
-    background-color: #181818; /* Match background color */
-    z-index: 2; /* Ensure tabs are above the tab content */
+    position: sticky; 
+    top: 0; 
+    background-color: #181818; 
+    z-index: 2; 
     margin-top: 3;
 }
 
 .tablink {
     background-color: #181818;
     color: #d4d4d4;
-    padding: 20px; /* Increase padding for larger tabs */
-    font-size: 18px; /* Increase font size */
-    border: 2px solid #1F1F1F; /* Add border */
-    border-top: 2px; /* Optional: add border radius for rounded corners */
+    padding: 20px; 
+    font-size: 18px; 
+    border: 2px solid #1F1F1F; 
+    border-top: 2px;
     outline: none;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -87,7 +106,7 @@ body, html {
 }
 
 .tabcontent.active {
-    display: block; /* Only display the active tab content */
+    display: block; 
 }
 
 .hidden {
@@ -97,7 +116,7 @@ body, html {
 .explore {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: lighter;
-    font-size: 15px; /* Increase font size */
+    font-size: 15px; 
     padding: 17px 10;
     padding-left: 10px;
     width: 100%;
@@ -105,12 +124,10 @@ body, html {
     justify-content: flex-start;
     align-items: center;
 }
-
-/* Portfolio styling */
 .portfolio {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: 15px; /* Increase font size */
+    font-size: 15px;
     padding-top: 5px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -118,7 +135,7 @@ body, html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 100px; /* Adjust the margin to align it with the tab contents */
+    margin-bottom: 10px; 
 }
 
 .welcomescreen {
@@ -127,9 +144,9 @@ body, html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-left: 75px;
     padding-top: 100px;
-    padding-bottom: 0; /* Remove bottom padding */
-    margin: 0; /* Remove any default margin */
-    padding-bottom: 0px; /* Ensure there's a small space between the welcome screen and the content */
+    padding-bottom: 0; 
+    margin: 0; 
+    padding-bottom: 0px; 
 }
 
 .welcome-container {
