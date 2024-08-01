@@ -22,6 +22,7 @@
                 <button class="tablink" id="defaultOpen" onclick="openTab(event, 'tab1')">Welcome</button>
                 <button class="tablink" onclick="openTab(event, 'tab2')">Experiences</button>
                 <button class="tablink" onclick="openTab(event, 'tab3')">Projects</button>
+                <button class="tablink" onclick="openTab(event, 'tab4')">Skills</button>
             </div>
             <div id="tab1" class="tabcontent">
                 <div class="welcomescreen">
@@ -124,48 +125,51 @@
                         </br> there must be logic and a sense of creativity. These projects help me develop my own sense of style and  
                         </br>creativity while being able to use the skills that I cultivated. I am always actively seeking out to do projects 
                         </br>that challenge my skills and challenge my critical thinking. 
-                        </br>I want to create projects that create an impact on the world. 
+                        </br>I want to create projects that create an impact on the world.
                         </br>
-                    </br> click the projects to see more details  **\
+                        </br> click the projects to see more details  **\
                         </strong>
                         </p>
                         <div class="card-container">
-                            <div class="card" onclick="openSidePanel('openBookInfo')">
+                            <div class="card" onclick="openSidePanel('studyseshInfo')">
                                 <div class="card-inner">
                                     <div class="card-front">
-                                        <h3 class="card-header">Open Book</h3>
-                                        <p class="card-content">Open Book: Anonymous Notes, Emotionally Intelligent Support. Join our community, where mental health matters and voices are heard without fear.</p>
-                                        <p class="card-content">HackHers Best Mobile App Hack</p>
+                                        <h3 class="card-header">StudySesh</h3>
+                                        <p class="card-content"> Study better, Study Together, StudySesh (Click me)</p>
+                                        <p class="card-content">Individual Passion Project</p>
                                     </div>
                                 </div>
                             </div> 
-                            <div class="card" onclick="openSidePanel('project2Info')">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <h3 class="card-header">KnowJoy</h3>
-                                        <p class="card-content"> Personalize studying platforms from various game modes tailored to your learning and make learning fun and effective</p>
-                                        <p class="card-content">BuildSpace s5 n&w project</p>
-                                    </div>
-                                </div>
-                            </div> 
+                            <!--end of card-->
                             
-                        </div> 
-                        <div class="card-container">
-                            <div class="card" onclick="openSidePanel('openBookInfo')">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <h3 class="card-header">Open Book</h3>
-                                        <p class="card-content">Open Book: Anonymous Notes, Emotionally Intelligent Support. Join our community, where mental health matters and voices are heard without fear.</p>
-                                        <p class="card-content">HackHers Best Mobile App Hack</p>
-                                    </div>
-                                </div>
-                            </div> 
                             <div class="card" onclick="openSidePanel('project2Info')">
                                 <div class="card-inner">
                                     <div class="card-front">
                                         <h3 class="card-header">KnowJoy</h3>
-                                        <p class="card-content"> Personalize studying platforms from various game modes tailored to your learning and make learning fun and effective</p>
+                                        <p class="card-content"> Personalize studying platforms from various game modes tailored to your learning and make learning fun and effective (Click me)</p>
                                         <p class="card-content">BuildSpace s5 n&w project</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!---->
+                        </div> 
+                        <!--second row of cards-->
+                        <div class="card-container">
+                            <div class="card" onclick="openSidePanel('skinsightInfo')">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">SkInSight</h3>
+                                        <p class="card-content">Insight about your Skin-take action now! (Click me)</p>
+                                        <p class="card-content">HackRU Submission</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="card" onclick="openSidePanel('openBookInfo')">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Open Book</h3>
+                                        <p class="card-content">Open Book: Anonymous Notes, Emotionally Intelligent Support. Join our community, where mental health matters and voices are heard without fear. (Click me)</p>
+                                        <p class="card-content">HackHers Best Mobile App Hack</p>
                                     </div>
                                 </div>
                             </div> 
@@ -210,10 +214,233 @@
                                 <p class="comment">//My team and I are still continuing to develop this project</p>
                                     </p>
                                 </div>
+                                <div id="skinsightInfo" class="panel-info">
+                                    <h3>SkInSight Details</h3>
+                                    <p>Users are able recieve an analysis of their skin in seconds. Trained on different skin tones, the machine detects common skin problems on diverse human skin. This model was trained to detect are blackheads, cold sores, cysts, eczema, hives, moles, psoriasis, rosacea, scars, vitiligo, and whiteheads.</br>
+                                        </br>Technologies Used: Python</br>
+                                        Frameworks Used: OpenCV, Keras</br>
+                                        Editors: PyCharm, Git</br>
+                                        </br> Links to Project</br>
+                                        <li>
+                                            <a href="https://devpost.com/software/skinsight-31ixqr" class="link">SkInSight Project On DevPost</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/pallavibiswas/SkInSight" class="link">SkInSight Project On Github</a>
+                                            <p class="comment">//This project was hosted on my peer's github during the hackathon. Achieved an accuracy rate of 62% within 24 hours</p>
+                                        </li>
+                                        
+                                    </p>
+                                </div>
+                                <div id="studyseshInfo" class="panel-info">
+                                    <h3>StudySesh Details</h3>
+                                    <p>Users are able to join and create study sessions where they are able to contribute to a community of students in need -promotion education and knowledge from all around.</br>
+                                        This is an individual passion project. Using MERN stack with the additon of axios to intergrate the frontend to the backend. Established connection with both. Working on the home page and profile page</br>
+                                        <p class="comment">//This is my passion project because I wanted to make sure that there was a space where students are able to connect with each other and create a safe space for studying. I struggled not finding a group I can connect with to study with. And I want to fix this.</p>
+                                        </br>Technologies Used: React.js, Node.js, Express.js (MERN Stack)</br>
+                                        </br> Database: MongoDB
+                                        </br>Editors: VSCode, XCode Simulator, XCode, Git</br>
+                                        </br> Links to Project</br>
+                                        <li>
+                                            <a href="https://github.com/AnanyaGuntur8/Projects/tree/main/StudySesh" class="link">StudySesh using SwiftUI</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/AnanyaGuntur8/StudySesh.git" class="link">StudySesh using MERN Stack</a>
+                                            <p class="comment">//I wanted to experiment with both the Mern Stack and Swift, and I believe that the MERN stack is much more feasabile in terms of the project's goal</p>
+                                        </li>
+                                        
+                                        
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        <!--end of page-->
+                        <p class="comment">//end of projects</p>
                 </div>
             </div>
+            <!--end of tab-->
+            <div id="tab4" class="tabcontent">
+                <div class="experience-header">SKILLS</div>
+                    <div class="content">
+                        <p class="comment"><strong>/* I am actively trying to learn new skills so that I can become a better Software Engineer.
+                        </br> These skills help me explore the vastness of computer science. Helping me create my own universe within programming
+                        </br>The reason I find Computer Science my passion is because it helps me dwelve into and build a universe of my own 
+                        </br>where I am able to express myself. *\
+                        </strong></p>
+                        <p class="comment"><strong>//Scroll to see more projects</strong></p>
+                        </br>
+                        </strong>
+                        </p>
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Programming</h3>
+                                        <p class="card-content">
+                                            Java
+                                        </br>Data Structures
+                                        </br>
+                                        </br>
+                                        <strong>Courses:</strong> 
+                                        </br>Introduction to Computer Science
+                                        </br> Data Structures
+                                        </br>
+                                        </br><strong>Current Courses:</strong>
+                                        </br>Computer Architecture (C language )
+                                        </br> Introduction to Artifical Intelligence
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Coding</h3>
+                                        <p class="card-content"> Links to Computer Science Assignments:
+                                    </br> <a href="https://github.com/AnanyaGuntur8/Projects/blob/main/asg285%40rutgers.edu_communities_1_Communities.java" class="link">Climate and Economic Justice Analysis</a>
+                                    </br>
+                                    </br>Links to Data Structures Assignments:
+                                    </br> <a href="https://github.com/AnanyaGuntur8/Projects/blob/main/GameOfLife.java" class="link">Game of Life</a>
+                                </br>
+                                    </br> <a href="https://github.com/AnanyaGuntur8/Projects/blob/main/ClimateEconJustice.java" class="link">Climate and Economic Justice Analysis (DSA VERSION)</a>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!---->
+                        </div> 
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Programming</h3>
+                                        <p class="card-content">
+                                            Python
+                                        </br>
+                                        </br>
+                                        </br>Self Learn 
+                                        </br> Work Experience
+                                        </br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Coding</h3>
+                                        <p class="card-content"> Links to Projects:
+                                    </br> <a href="https://github.com/AnanyaGuntur8/Projects/blob/main/skin_problem_detection.py" class="link">SkInSight Project</a>
+                                    </br>
+                                    </br>Computer Science Research Assistant in RINT Lab-Python
+                                    </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!---->
+                        </div> 
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Programming</h3>
+                                        <p class="card-content">
+                                            HTML
+                                        </br>CSS
+                                    </br>JavaScript/ React.js
+                                        </br>
+                                        </br>
+                                        <strong>Experiences:</strong> 
+                                        </br>Rutgers Mobile Application Development Club
+                                    </br>buildspace s5 n&w experience
+                                        </br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Coding</h3>
+                                        <p class="card-content"> Links to Projects:
+                                        </br> <a href="https://github.com/AnanyaGuntur8/Projects/tree/main/Project%20App" class="link">Pokémon Mood</a>
+                                    </br><a href="https://github.com/AnanyaGuntur8/portfolio" class="link">Portfolio</a>
+                                </br><a href="https://github.com/nb923/KnowJoy" class="link">KnowJoy</a> |
+
+                                <a href="https://knowjoy.onrender.com" class="link">KnowJoy Prototype</a>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!---->
+                        </div> 
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Programming</h3>
+                                        <p class="card-content">
+                                            React.js
+                                        </br>Node.js
+                                        </br>Express.js
+                                        </br>MongoDB
+                                        </br>
+                                        </br>Self Learning
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Coding</h3>
+                                        <p class="card-content"> Links to Project:
+                                    </br> <a href="https://github.com/AnanyaGuntur8/StudySeshApp" class="link">StudySesh</a>
+                                    </br>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!---->
+                        </div> 
+                        <!--Another Row-->
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Mathematics</h3>
+                                        <p class="card-content">
+                                            Linear Algebra 
+                                        </br> MATLAB
+                                        </br> Discrete 1
+                                        </br>
+                                        </br>
+                                        <strong>Courses:</strong> 
+                                        </br>Introduction to Linear Algebra (with MATLAB)
+                                        </br> Introduction to Discrete 1
+                                        </br>
+                                        </br><strong>Current Courses:</strong>
+                                        </br> Introduction to Discrete 2
+                                    </br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h3 class="card-header">Coding</h3>
+                                        <p class="card-content"> Links to MATLAB:
+                                    </br> <a href="https://github.com/AnanyaGuntur8/Projects/blob/MATLAB-Project/lab3-2.txt" class="link">MATLAB Project</a>
+                                    </br>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!---->
+                        </div> 
+                        <p class="comment">//end of projects</p>
+                    </div>
+                </div> 
         </div>
     </div>
     
